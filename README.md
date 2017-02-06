@@ -54,6 +54,27 @@ Use the built in Widget in code or XML:
     />
 ```
 
+You can add font files inside of your project with following path, you need to add new assests/fonts folder
+```java
+i.e. YOUR_PROJECT/src/main/assets/fonts
+```
+after than set font directly as below,
+```xml
+<me.grantland.widget.AutofitTextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    android:maxLines="2"
+    android:textSize="40sp"
+    autofit:minTextSize="16sp"
+    autofit:fontname="FONT_NAME.EXTENSION"/>
+```
+change fontname with your custom font, 
+```java
+i.e. autofit:fontname="Roboto-Bold.ttf"
+```
+![custom_font](https://cloud.githubusercontent.com/assets/13764097/22636444/34da74d2-ec61-11e6-895c-3ac42ce780e7.png)
+
 
 ## License
 
